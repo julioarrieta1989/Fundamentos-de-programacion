@@ -1,3 +1,3 @@
 print("Hola Mundo")
 
-n=input("")
+n=input("hola")
