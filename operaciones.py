@@ -8,8 +8,6 @@ vector = [0]*(tamaño+1)
 
 f.llenarVector(vector,tamaño)
 
-for i in range (1,tamaño+1):
-   print(vector[i])
+f.imprimirVector(vector)
 
 
-print(f"El tamaño del vector es {vector[0]}")
