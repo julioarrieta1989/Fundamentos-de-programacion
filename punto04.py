@@ -20,7 +20,7 @@ Suma = 6412 + 77877 + 4862 = 89151
 
 
 
-from vector import vector
+from clase_vector import vector
 import random
 import math
 
@@ -52,7 +52,7 @@ def solucion():
     """Usamos un ciclo para llenar el vector con número del 1 al 99999"""
     for i in range(1, n + 1):
         """Se genera aleatoriamente un número entero entre 1 y 99999"""
-        vec4.V[i] = #numero random entre 1 y 99999, Use random.randint()
+        vec4.V[i] = random.randint(1,99999)
         """Se actualiza el valor de la primera posición del vector indicando cuantas posiciones
         son usadas (En este caso es igual al tamaño del vector)"""
         vec4.V[0] = n
@@ -60,11 +60,19 @@ def solucion():
     for i in range(1, vec4.V[0] + 1):
         """En la variable 'nunu' sea almacena el numero invertido de la posición i del vector"""
         nunu = invierteNumero(vec4.V[i])
+       
         """Se pregunta si al invertir el numero sige siendo el mismo(capicua) o si el numero compienza por un dígito par"""
-        if vec4.V[i] == nunu or comienzaCon(vec4.V[i]) % 2 == 0:
+        if vec4.V[i] == nunu or comienzaCon(vec4.V[i])  % 2 == 0:
             """Se realiza la suma de la suma acumulada
             con el dato en la posición i"""
-            s += #Acumule la suma
+            s += vec4.V[i]
+            print(vec4.V[i])
     """Se retornan los objetos requeridos para efectuar la
     calificación de la solución"""
-    return vec4, s
+    print (f"{vec4} {s} {n}")
+
+
+prueba = solucion()    
+
+
+
