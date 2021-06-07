@@ -17,8 +17,20 @@ def imprimirVector(v):
     print(f"El tamño del vector es {m}") 
  
   
+def vectorVacio(v):
+    if v[0]==0:
+     return True
 
+    return False 
 
  
+ 
+   
+def vectorLleno(v,n):
+    if v[0]==n:
+     return True
 
+    return False 
+
+ 
  
