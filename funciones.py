@@ -4,7 +4,7 @@ def llenarVector(v,n):
     v[0]=n
 
     for i in range(1,n+1):
-        v[i] = random.randint(1,99)
+        v[i] = random.randint(1,20)
  
 
 
@@ -33,4 +33,18 @@ def vectorLleno(v,n):
     return False 
 
  
- 
+def sumarVector(v):
+    tamaño=v[0]
+    total=0
+    for i in range(1,tamaño+1):
+        total=total+v[i]
+    return total
+
+
+
+def insertarDato(d,i,v,n):
+
+    for j in range(v[0],i-1,-1): 
+        v[j+1]=v[j]   
+    v[i]=d
+    v[0]=v[0]+1
