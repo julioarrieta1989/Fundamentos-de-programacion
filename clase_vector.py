@@ -10,7 +10,8 @@ class vector:
 
 
 v=vector(2) 
-for i in range(1,4+1):
+l=v.V
+for i in range(1,l+1):
   numero = int(input("Ingrese un numero "))
   v.V[i]=numero
 
