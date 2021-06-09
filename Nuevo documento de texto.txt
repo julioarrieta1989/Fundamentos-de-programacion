@@ -1,0 +1,13 @@
+Elabore un programa en Python que genere un entero entre 15 y 30; luego, construya un objeto de la clase vector tal como la definida en el curso con tamaño el número generado. Luego, llene el vector con números enteros entre 1 y 29 generados aleatoriamente. Haga una copia del vector generado. Con el vector copiado, elabore un programa en Python que intercambie el mayor dato con el menor dato.  
+
+Si el menor dato aparece más de una vez intercambie la primera ocurrencia, igualmente, si el mayor dato aparece más de una vez intercambie la última ocurrencia.  
+
+Para obtener el resultado de su evaluación escriba su programa en el método solucion(). Dicho método debe retornar respectivamente el vector construido inicialmente y el vector modificado con base en el enunciado.
+
+En otras palabras, la última instrucción del método solución, sería:
+
+return nombreDelVectorCreado, nombreDelVectorModificado               
+
+Si el vector creado se llamó vec1 y el vector modificado se llamó vec1mod, sería:
+
+return vec1, vec1mod
